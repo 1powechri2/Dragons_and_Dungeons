@@ -33,9 +33,38 @@ html {
 }
 
 #welcome {
+  margin-top: 20px;
   color: black;
   font-family: 'UnifrakturMaguntia', cursive;
   text-align: center;
-  font-size: 100px;
-  text-shadow: 0px 0px 100px green;
+  font-size: 200px;
+  text-shadow: 0px 0px 50px #16FA14;
+}
+
+#links {
+  margin-top: 20px;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  color: #FAB100;
+  font-size: 55px;
+  text-shadow: 0px 0px 10px black;
+  line-height: 1.5;
+}
+
+#auth_div {
+  margin-top: 30px;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  color: #16FA14;
+  font-size: 55px;
+  text-shadow: 0px 0px 20px black;
+  line-height: 1.5;
+}
+
+#login {
+    margin-right: 450px;
+}
+
+#sign_up {
+    margin-left: 450px;
 }
