@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'd_and_d.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dandd',
         'USER': 'sba',
-        'PASSWORD': '',
+        'PASSWORD': 'sfyack1',
         'HOST': 'localhost',
         'PORT': '',
     }
