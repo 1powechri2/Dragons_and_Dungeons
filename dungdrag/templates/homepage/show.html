@@ -12,6 +12,28 @@
       As a player you can create characters based on the <br>
       Dungeons and Dragons 5 Edition Speculations</p>
     </div>
+    <div id='login_field'>
+      <form action='/login' method='post'>
+        {% csrf_token %}
+        <p>USERNAME</p>
+        <p>{{ Login.username }}</p>
+        <p>PASSWORD</p>
+        <p>{{ Login.password }}</p>
+        <input type='submit' value='Login'><br>
+      </form>
+    </div>
+    <div id='signUp_field'>
+      <form action='/sign_up' method='post'>
+        {% csrf_token %}
+        <p>USERNAME</p>
+        <p>{{ SignUp.username }}</p>
+        <p>EMAIL</p>
+        <p>{{ SignUp.email }}</p>
+        <p>PASSWORD</p>
+        <p>{{ SignUp.password }}</p>
+        <input type='submit' value='Sign Up'><br>
+      </form>
+    </div>
     <div id='auth_div'>
       <span id='login'>Login</span><span id='sign_up'>Sign Up</span>
     </div>
