@@ -13,7 +13,7 @@
       Dungeons and Dragons 5 Edition Speculations</p>
     </div>
     <div id='login_field'>
-      <form action='/login' method='post'>
+      <form action='/login_user' method='post'>
         {% csrf_token %}
         <p>USERNAME</p>
         <p>{{ Login.username }}</p>

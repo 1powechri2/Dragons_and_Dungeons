@@ -29,11 +29,11 @@ def sign_up(request):
                 login(request, user)
                 return redirect('/user_page')
 
-def login(request):
+def login_user(request):
     u_name = request.POST['username']
     p_word = request.POST['password']
 
-    user = authenticate(username=u_name, password=p_word)
+    user = authenticate(request, username=u_name, password=p_word)
     if user is not None:
         login(request, user)
         return redirect('/user_page')
