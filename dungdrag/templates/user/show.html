@@ -9,5 +9,6 @@
     <header id='welcome'>
       <h1> Welcome {{ request.user.username }}<h1>
     </header>
+    <a href="{% url 'logout_user' %}">LOG OUT</a>
   </body>
 </html>
