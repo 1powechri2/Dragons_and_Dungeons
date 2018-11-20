@@ -64,9 +64,19 @@ body {
 }
 
 #login {
-    margin-right: 35%;
+  margin-right: 35%;
+}
+
+#login:hover{
+  color:#6CFA0E !important;
+	text-shadow: 0px 0px 40px #8FFA5A;
 }
 
 #sign_up {
-    margin-left: 35%;
+  margin-left: 35%;
+}
+
+#sign_up:hover{
+  color:#6CFA0E !important;
+	text-shadow: 0px 0px 40px #8FFA5A;
 }
