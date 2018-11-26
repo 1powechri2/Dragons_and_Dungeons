@@ -80,3 +80,36 @@ body {
   color:#6CFA0E !important;
 	text-shadow: 0px 0px 40px #8FFA5A;
 }
+
+/* Style below is for the user show page */
+
+#create {
+  font-family: 'Metamorphous', cursive;
+	color: #16FA14;
+	font-size: 40px;
+	height: 400px;
+}
+
+#create_character {
+  margin-right: 20%;
+}
+
+#create_character:hover{
+  color:#6CFA0E !important;
+	text-shadow: 0px 0px 40px #8FFA5A;
+}
+
+#create_campaign {
+  margin-left: 20%;
+}
+
+#create_campaign:hover{
+  color:#6CFA0E !important;
+	text-shadow: 0px 0px 40px #8FFA5A;
+}
+
+#logout {
+	color: #FAB100;
+	font-size: 30px;
+	font-family: 'Metamorphous', cursive;
+}

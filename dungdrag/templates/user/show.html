@@ -4,13 +4,19 @@
       <link rel="stylesheet" type="text/css" href='static/homepage/style.css'>
       <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
   </head>
   <body>
     <header id='welcome'>
-      <h1> Welcome {{ request.user.username }}<h1>
+      <h1> Welcome {{ name }}<h1>
     </header>
-    <a href="{% url 'logout_user' %}">LOG OUT</a>
-    <p id='create_character'>Create Character</p>
-    <p id='create_campaign'>Create Campaign</p>
+    <body>
+      <div id='create'>
+        <span id='create_character'>Create Character</span><span id='create_campaign'>Create Campaign</span><br>
+      </div>
+    </body>
+    <footer>
+      <a href="{% url 'logout_user' %}" id='logout'>LOG OUT</a>
+    </footer>
   </body>
 </html>
