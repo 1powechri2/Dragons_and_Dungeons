@@ -18,10 +18,7 @@ def sign_up(request):
         if form.is_valid():
             user_data = form.cleaned_data
             if User.objects.filter(username=user_data['username']).exists():
-                template = loader.get_template('homepage/show.html')
-                context = {'SignUp': SignUp(),
-                           'Login': Login()}
-                return HttpResponse(template.render(context, request))
+                return redirect('/')
             else:
                 user = User.objects.create_user(user_data['username'],
                                          user_data['email'],
@@ -38,10 +35,7 @@ def login_user(request):
         login(request, user)
         return redirect('/user_page')
     else:
-        template = loader.get_template('homepage/show.html')
-        context = {'SignUp': SignUp(),
-                   'Login': Login()}
-        return HttpResponse(template.render(context, request))
+        return redirect('/')
 
 def user_page(request):
     template = loader.get_template('user/show.html')
@@ -51,7 +45,4 @@ def user_page(request):
 
 def logout_user(request):
     logout(request)
-    template = loader.get_template('homepage/show.html')
-    context = {'SignUp': SignUp(),
-               'Login': Login()}
-    return HttpResponse(template.render(context, request))
+    return redirect('/')
